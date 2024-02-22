@@ -1,0 +1,53 @@
+/* RESET */
+img{
+    width: 100%;
+}
+ul, ol , menu{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/* LAYOUT */
+body *.container{
+    text-align: center;
+}
+section{
+    padding: 32px;
+}
+
+
+/* STYLE */
+.header__nav{
+    background-color:#2C3E50 ;
+    color: white;
+}
+.hero{
+    background-color: #1ABC9C;
+}
+
+.about__us{
+    background-color: #1ABC9C;
+}
+.reference{
+    background-color: #3A546D;
+}
+.copyright{
+    background-color: #2C3E50;
+}
+/* DEBUG */
+.debug .container, .container-sm, .container-md, .container-lg{
+    border: 1px solid black;
+}
+.debug .row{
+    border: 1px solid red;
+    padding: 18px;
+}
+.debug .col, .col-12, .col-4{
+    border: 1px solid blue;
+    padding: 16px;
+
+}
