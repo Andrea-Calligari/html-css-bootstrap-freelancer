@@ -5,13 +5,16 @@ img{
 ul, ol , menu{
     list-style: none;
 }
-a{
+a {
     text-decoration: none;
-    color: currentColor;
+    /* color:currentColor */
 }
 
 
 /* LAYOUT */
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .debug  *.container:not(.header__nav > .container){
     text-align: center;
 }
@@ -19,8 +22,35 @@ a{
 section{
     padding: 32px;
 }
-
-
+.avatar{
+   max-width: 450px;
+}
+.description{
+    font-size: 36px;
+}
+.header__title{
+    font-size:24px;
+}
+.logo{
+    font-size: 30px;
+}
+.header__nav .row .col-4 > li{
+    padding-left: 8px;
+    font-size: 16px; 
+}
+.bottom__title{
+    font-size:20px;
+    margin: 0;
+}
+.about__us .star + p {
+    column-count: 2;
+    
+  }
+ 
+p > a{
+    text-decoration: none;
+    color: #1ABC9C;
+}
 /* STYLE */
 .header__nav{
     background-color:#2C3E50 ;
@@ -28,27 +58,65 @@ section{
 }
 .hero{
     background-color: #1ABC9C;
+    color: white;
+
 }
 
 .about__us{
     background-color: #1ABC9C;
+    color: white;
 }
 .reference{
     background-color: #3A546D;
+    color: white;
 }
 .copyright{
     background-color: #2C3E50;
+    color: white;
 }
+.contact__me form > input{
+    display:block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+section .col-12 >*:not(.btn){
+    padding-bottom: 16px;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+  }
+.social{
+    width: 40px;
+    line-height: 20px;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+
+ 
+
+/* MEDIA-QUERY */
+@media  screen and (min-width: 768px) {
+    .bottom__title{
+        font-size: 28px;
+    }
+    
+}
+
 /* DEBUG */
-.debug .container, .container-sm, .container-md, .container-lg{
+/* .debug .container, .container-sm, .container-md, .container-lg{
     border: 1px solid black;
 }
-.debug .row{
-    border: 1px solid red;
-    padding: 32px;
-}
-.debug .col-6, .col-12, .col-4{
+.debug .row{ */
+    /* border: 1px solid red; */
+/* } */
+/* .debug .col-6, .col-12, .col-4{
     border: 1px solid blue;
     padding: 16px;
 
-}
+} */
